@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="icon" href="img/profile.jpg" type="image/png">
+    <title>GTP 25</title>
+  </head>
+  <body>
+    <header class="bg-white fixed left-0 right-0 z-10 shadow-lg">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex-1">
+            <a class="block text-black text-xl font-semibold" href="#"> GoesToPublic </a>
+          </div>
+          <button id="menu-button" class="block md:hidden rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <nav id="mobile-menu" class="hidden absolute top-16 left-0 w-full bg-white md:block md:static md:w-auto md:bg-transparent">
+            <ul class="flex flex-col md:flex-row md:items-center gap-10 p-4 md:p-0 text-base font-medium">
+              <li>
+                <a class="text-gray-700 transition hover:text-blue-500 hover:underline duration-150 hover:underline-offset-2" href="#about">About</a>
+              </li>
+              <li>
+                <a class="text-gray-700 transition hover:text-blue-500 hover:underline duration-150 hover:underline-offset-2" href="#skills">Skills</a>
+              </li>
+              <li>
+                <a class="text-gray-700 transition hover:text-blue-500 hover:underline duration-150 hover:underline-offset-2" href="#project">Project</a>
+              </li>
+              <li>
+                <a class="text-gray-700 transition hover:text-blue-500 hover:underline duration-150 hover:underline-offset-2" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 h-screen flex items-center">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+          <div>
+            <div class="max-w-lg md:max-w-none">
+              <h2 class="font-semibold text-blue-500 sm:text-base mb-2">Hallo semuanya 👋</h2>
+              <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl mb-2">Wais Alqurni.</h1>
+              <p class="font-semibold text-gray-900 sm:text-lg mb-2">Web Developer.</p>
+              <p class="text-gray-700 mb-4">Seorang desainer dan pengembang web pemula yang fokus pada desain antarmuka pengguna (UI), pembuatan website responsif, serta pengembangan visual untuk pengalaman pengguna yang menarik.</p>
+              <a class="inline-block rounded-lg border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500" href="#">
+                Hubungi saya
+              </a>
+            </div>
+          </div>
+
+          <div class="mx-auto">
+            <img src="img/profile.jpg" class="rounded duration-200 hidden lg:block" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8 bg-white py-24 sm:py-32">
+        <h2 class="font-semibold text-blue-500 sm:text-base mb-2 text-center">Skills</h2>
+        <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl mb-4 text-center">Keahlian Saya.</h1>
+        <div class="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+          <div>
+            <img class="max-h-16 w-full object-contain" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS" width="158" height="48" />
+            <div class="w-fit mx-auto whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-sm text-blue-700 my-2">Frontend</div>
+            <p class="text-center lg:text-lg font-bold">Tailwind CSS</p>
+          </div>
+          <div>
+            <img class="max-h-16 w-full object-contain" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" width="158" height="48" />
+            <div class="w-fit mx-auto whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-sm text-blue-700 my-2">Frontend</div>
+            <p class="text-center lg:text-lg font-bold">HTML 5</p>
+          </div>
+          <div>
+            <img class="max-h-16 w-full object-contain" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" width="158" height="48" />
+            <div class="w-fit mx-auto whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-sm text-blue-700 my-2">Frontend</div>
+            <p class="text-center lg:text-lg font-bold">CSS 3</p>
+          </div>
+          <div>
+            <img class="max-h-16 w-full object-contain" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Javascript" width="158" height="48" />
+            <div class="w-fit mx-auto whitespace-nowrap rounded-full bg-blue-100 px-2.5 py-0.5 text-sm text-blue-700 my-2">Fullstack</div>
+            <p class="text-center lg:text-lg font-bold">Java Script</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <div class="mx-auto max-w-5xl px-6 lg:px-8 bg-white py-24 sm:py-32">
+        <h2 class="font-semibold text-blue-500 sm:text-base mb-2 text-center">Portofolio</h2>
+        <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl mb-4 text-center">Proyek Terbaru.</h1>
+        <h2 class="text-gray-500 text-lg mb-2 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint rerum animi repudiandae natus quam est, laboriosam totam at nam dolorum autem illum velit modi.</h2>
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 mt-12">
+          <div class="mx-auto">
+            <img alt="" src="img/prt1.png" class="h-56 w-full object-cover rounded-lg shadow-md sm:h-64 lg:h-72" />
+            <h3 class="mt-8 text-lg font-bold text-gray-900 sm:text-xl">Project 1.</h3>
+            <p class="mt-2 max-w-sm text-gray-700">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt. <a href="" class="text-blue-500 underline-offset-2 underline">Lihat</a></p>
+          </div>
+          <div class="mx-auto">
+            <img alt="" src="img/prt2.png" class="h-56 w-full object-cover rounded-lg shadow-md sm:h-64 lg:h-72" />
+            <h3 class="mt-8 text-lg font-bold text-gray-900 sm:text-xl">Project 2.</h3>
+            <p class="mt-2 max-w-sm text-gray-700">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt. <a href="" class="text-blue-500 underline-offset-2 underline">Lihat</a></p>
+          </div>
+          <div class="mx-auto">
+            <img alt="" src="img/prt3.png" class="h-56 w-full object-cover rounded-lg shadow-md sm:h-64 lg:h-72" />
+            <h3 class="mt-8 text-lg font-bold text-gray-900 sm:text-xl">Project 3.</h3>
+            <p class="mt-2 max-w-sm text-gray-700">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt. <a href="" class="text-blue-500 underline-offset-2 underline">Lihat</a></p>
+          </div>
+          <div class="mx-auto">
+            <img alt="" src="img/prt4.png" class="h-56 w-full object-cover rounded-lg shadow-md sm:h-64 lg:h-72" />
+            <h3 class="mt-8 text-lg font-bold text-gray-900 sm:text-xl">Project 4.</h3>
+            <p class="mt-2 max-w-sm text-gray-700">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reiciendis sequi ipsam incidunt. <a href="" class="text-blue-500 underline-offset-2 underline">Lihat</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800" id="contact">
+      <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+        <h2 class="font-semibold text-blue-500 sm:text-base mb-2 text-center">Let's be friend</h2>
+        <h1 class="text-2xl font-bold text-white sm:text-3xl mb-4 text-center">GoesToPublic</h1>
+        <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-200">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.</p>
+        <ul class="mt-8 flex justify-center gap-6 md:gap-8">
+          <li>
+            <a href="#" rel="noreferrer" target="_blank" class="text-gray-300 transition hover:text-gray-300/75">
+              <i class="bx bxl-facebook-circle text-3xl lg:text-4xl hover:text-blue-500 duration-300"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" rel="noreferrer" target="_blank" class="text-gray-300 transition hover:text-gray-300/75">
+              <i class="bx bxl-instagram text-3xl lg:text-4xl hover:text-blue-500 duration-300"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" rel="noreferrer" target="_blank" class="text-gray-300 transition hover:text-gray-300/75">
+              <i class="bx bxl-twitter text-3xl lg:text-4xl hover:text-blue-500 duration-300"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" rel="noreferrer" target="_blank" class="text-gray-300 transition hover:text-gray-300/75">
+              <i class="bx bxl-google text-3xl lg:text-4xl hover:text-blue-500 duration-300"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
